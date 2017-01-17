@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style type="text/css">
+  ul{list-style: none}
+  ul li{border: 1px solid #eee;padding: 10px;margin-top: 1px;width: 20%;text-align: center;min-width: 200px;}
+  </style>
+  </head>
+  <body>
+		<ul>  
+			<% d.forEach(function(s){ %>  
+				<li foo='<%= s.id + "'" %>'><%= s.name %></li>  
+			<% }) %>  
+		</ul>  
+  </body>
+</html>
